@@ -1,9 +1,8 @@
-package Laços;
+package Arrays;
 
 public class E04 {
 
     public static void main(String[] args) {
-
-
+        
     }
 }
