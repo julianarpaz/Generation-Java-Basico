@@ -1,21 +1,22 @@
+package Laços;
+
 import java.util.Scanner;
 
 public class E05 {
 
     public static void main(String[] args) {
 
-        double[] nota = new double[3];
-        double media;
+        int numero, contagem = 0;
+
         Scanner ler = new Scanner(System.in);
 
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Insira aqui a " + (i + 1) + " nota: ");
-            nota[i] = ler.nextInt();
-        }
+        do {
+            System.out.println("Insira um número diferente de 0: ");
+            numero = ler.nextInt();
+            contagem += numero;
+        } while (numero != 0);
 
-        media = (nota[0]*2 + nota[1]*3 + nota[2]*5)/10;
-
-        System.out.println(String.format("A média do aluno é: %.2f", media));
+        System.out.println("Soma dos números digitados: " + contagem);
 
     }
 }
