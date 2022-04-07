@@ -1,30 +1,18 @@
+package Herança;
+
 public class Teste {
 
     public static void main(String[] args) {
 
-        ContaBancaria Juliana = new ContaBancaria("Juliana Paz",1,2468);
-        ContaBancaria Luis = new ContaBancaria("Luis Guerreiro",1,1359);
+        Animal cavalo = new Cavalo ("Spirit", 15);
+        Animal cachorro = new Cachorro ("Paçoca", 5);
+        Animal preguiça = new Preguiça ("Manzanza", 25);
 
-        System.out.println("O saldo da conta de Juliana é: "+Juliana.getSaldo());
-        System.out.println("O saldo da conta de Luis é: "+Luis.getSaldo());
+        cavalo.emitirSom(5);
+        cachorro.emitirSom(6);
+        preguiça.emitirSom(8);
 
-        Juliana.deposito(250.00);
-        System.out.println("O saldo da conta de Juliana após o deposito é: "+Juliana.getSaldo());
-
-        //Juliana.saque(300.00);
-
-        Juliana.saque(150.00);
-
-        System.out.println("O valor após o saque é de: "+Juliana.getSaldo());
-
-        Luis.transferencia(50.00, Juliana);
-
-        System.out.println("O saldo da conta de Luis é de: "+Luis.getSaldo());
-
-        Juliana.transferencia(50.00, Luis);
-
-        System.out.println("O saldo da conta de Luis após a transferência é de: "+Luis.getSaldo());
-
+        
 
 
     }
